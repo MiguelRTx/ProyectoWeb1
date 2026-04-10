@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de Cine</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="barra-superior">
+        <div class="logo-texto">
+             <i class="fa-solid fa-film"></i>
+            <span class="nombre-cine">CineWeb</span>
+        </div>
+    </nav>
+    <main>
+        <section class="seccion-cartelera">
+            <h1 class="titulo-secundario">Ahora en cartelera</h1>
+            <p class="subtitulo-secundario">Explora las últimas películas y reserva tus entradas hoy.</p>
+            <form class="buscador-peliculas">
+                <input type="text" id="buscar-titulo" placeholder="Buscar película por título">
+                <select id="filtro-genero">
+                    <option value="">Género</option>
+                    <option value="accion">Acción</option>
+                    <option value="comedia">Comedia</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="terror">Terror</option>
+                </select>
+            </form>
+            <div class="grid-peliculas" id="contenedor-peliculas">
+            </div>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <ul>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Terms of Service</li>
+        </ul>
+        <div class="copyright">
+            © 2024 CineWeb
+        </div>
+    </footer>
+    <script src="js/cartelera.js"></script>
+</body>
+</html>

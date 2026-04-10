@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones - CineWeb</title>
+    <link rel="stylesheet" href="../css/funcion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="barra-superior">
+        <div class="logo-texto">
+            <i class="fa-solid fa-film"></i>
+            <span class="nombre-cine">CineWeb</span>
+        </div>
+        <button class="boton-volver" onclick="window.location.href='../index.html'">
+            Volver
+        </button>
+    </nav> 
+    
+    <main>
+        <div class="poster-pelicula">
+            <img id="poster-imagen" src="" alt="Poster">
+        </div>
+        
+        <div class="detalle-pelicula">
+            <h1 class="detalle-titulo" id="titulo-pelicula"></h1>
+            
+            <div class="tags-pelicula" id="tags-contenedor">
+          
+            </div>
+            
+            <p class="detalle-resumen" id="sinopsis-pelicula"></p>
+            
+            <div class="showtimes-section">
+                <hr class="linea-horizontal">
+                
+                <div class="showtimes-header">
+                    <h2 class="showtimes-title">Funciones disponibles</h2>
+                    <span class="fecha-show" id="fecha-actual"></span>
+                </div>
+                
+                <div id="contenedor-funciones">
+            
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../js/funciones.js"></script>
+</body>
+</html>

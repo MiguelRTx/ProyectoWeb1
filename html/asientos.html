@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Asientos - CineWeb</title>
+    <link rel="stylesheet" href="../css/asientos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="barra-superior">
+        <div class="logo-texto">
+            <i class="fa-solid fa-film"></i>
+            <span class="nombre-cine">CineWeb</span>
+        </div>
+        <button class="boton-volver" onclick="history.back()">
+            Volver
+        </button>
+    </nav>
+    
+    <main class="contenedor-asientos">
+        <div class="info-pelicula">
+            <h1 id="titulo-pelicula"></h1>
+            <p id="horario-funcion"></p>
+            <p class="instruccion">Seleccionado tus asientos:</p>
+        </div>
+        
+        <div class="sala-cine">
+            <div class="pantalla">PANTALLA</div>
+            <div class="grid-asientos" id="grid-asientos">
+            </div>
+        </div>
+        
+        <div class="leyenda-asientos">
+            <div class="item-leyenda">
+                <span class="asiento-demo disponible"></span>
+                <span>Disponible</span>
+            </div>
+            <div class="item-leyenda">
+                <span class="asiento-demo ocupado"></span>
+                <span>Ocupado</span>
+            </div>
+            <div class="item-leyenda">
+                <span class="asiento-demo seleccionado"></span>
+                <span>Seleccionado</span>
+            </div>
+        </div>
+        
+        <div class="resumen-seleccion">
+            <div class="info-resumen">
+                <h3>Seleccionado:</h3>
+                <p>Asientos: <span id="asientos-seleccionados">-</span></p>
+                <p class="precio-total">Precio Total: <span id="precio-total">$0.00</span></p>
+            </div>
+            <button class="boton-continuar" id="boton-continuar">Siguiente</button>
+        </div>
+    </main>
+    
+    <script src="../js/asientos.js"></script>
+</body>
+</html>

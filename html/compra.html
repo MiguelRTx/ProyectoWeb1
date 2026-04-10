@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Compra - CineWeb</title>
+    <link rel="stylesheet" href="../css/compra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="barra-superior">
+        <div class="logo-texto">
+            <i class="fa-solid fa-film"></i>
+            <span class="nombre-cine">CineWeb</span>
+        </div>
+        <button class="boton-volver" onclick="history.back()">Atrás</button>
+        <button class="boton-cambiar" onclick="history.back()">Cambiar Orden</button>
+    </nav>
+    
+    <main class="contenedor-compra">
+        <h1 class="titulo-compra">Confirmar Compra</h1>
+        <p class="subtitulo-compra">Por favor, revise los detalles de su orden antes del pago.</p>
+        
+        <div class="temporizador">
+            <p>Sus asientos están reservados por</p>
+            <div class="tiempo-restante">
+                <div class="bloque-tiempo">
+                    <span class="numero" id="minutos">10</span>
+                    <span class="etiqueta">Minutos</span>
+                </div>
+                <div class="bloque-tiempo">
+                    <span class="numero" id="segundos">00</span>
+                    <span class="etiqueta">Segundos</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contenedor-principal">
+            <div class="panel-resumen">
+                <img id="poster-pelicula" src="" alt="Poster">
+                
+                <h2 id="titulo-pelicula"></h2>
+                <p id="clasificacion-pelicula"></p>
+                <p id="sala-funcion"></p>
+                
+                <hr class="separador">
+                
+                <div class="fila-detalle">
+                    <span>Fecha y Hora</span>
+                    <span id="fecha-hora"></span>
+                </div>
+                
+                <div class="fila-detalle">
+                    <span>Asientos</span>
+                    <span id="asientos-compra"></span>
+                </div>
+                
+                <div class="fila-detalle">
+                    <span>Precio del ticket</span>
+                    <span id="precio-tickets"></span>
+                </div>
+                
+                <div class="fila-detalle">
+                    <span>Tarifa de servicio</span>
+                    <span id="tarifa-servicio">$3.50</span>
+                </div>
+                
+                <hr class="separador">
+                
+                <div class="fila-total">
+                    <span>Total</span>
+                    <span id="total-pagar"></span>
+                </div>
+            </div>
+            
+            <div class="panel-formulario">
+                <h3>Sus detalles</h3>
+                
+                <form id="formulario-compra">
+                    <div class="campo-formulario">
+                        <label for="nombre-completo">Nombre completo</label>
+                        <input type="text" id="nombre-completo" placeholder="Ingrese su nombre completo" required>
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="Ingrese su correo electrónico" required>
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="telefono">Número de teléfono <span class="opcional">Opcional</span></label>
+                        <input type="tel" id="telefono" placeholder="Ingrese su número de teléfono">
+                    </div>
+                    
+                    <button type="submit" class="boton-confirmar">Confirmar y Pagar</button>
+                    <p class="texto-seguridad">Será redirigido a nuestra pasarela de pago segura.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="pie-pagina">
+        <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Contact Us</li>
+        </ul>
+    </footer>
+    
+    <div id="modal-confirmacion" class="modal-oculto">
+        <div class="contenido-modal">
+            <div class="icono-exito">✓</div>
+            <h2>¡Gracias por tu compra, <span id="nombre-cliente"></span>!</h2>
+            <div class="ticket-virtual">
+                <h3>Tu Entrada</h3>
+                <p><strong>Película:</strong> <span id="ticket-pelicula"></span></p>
+                <p><strong>Fecha y Hora:</strong> <span id="ticket-fecha"></span></p>
+                <p><strong>Asientos:</strong> <span id="ticket-asientos"></span></p>
+                <p><strong>Email:</strong> <span id="ticket-email"></span></p>
+                <p><strong>Teléfono:</strong> <span id="ticket-telefono"></span></p>
+                <p><strong>Total:</strong> <span id="ticket-total"></span></p>
+            </div>
+            <button class="boton-cerrar" onclick="window.location.href='../index.html'">Volver al inicio</button>
+        </div>
+    </div>
+    
+    <script src="../js/compra.js"></script>
+</body>
+</html>

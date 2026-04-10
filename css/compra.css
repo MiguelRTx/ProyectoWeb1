@@ -1,0 +1,577 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #000000;
+    margin: 0;
+    color: #fff;
+    min-height: 800px;
+}
+
+.barra-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 55px;
+    border-bottom: 1px solid #212121;
+    background: #000000;
+}
+
+.logo-texto {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.fa-film {
+    color: #FEE715;
+    font-size: 26px;
+}
+
+.nombre-cine {
+    color: #FEE715;
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.boton-volver,
+.boton-cambiar {
+    background: transparent;
+    color: #FEE715;
+    font-weight: 600;
+    border: 2px solid #FEE715;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.boton-volver:hover,
+.boton-cambiar:hover {
+    background: #FEE715;
+    color: #000;
+}
+
+.contenedor-compra {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-compra {
+    font-size: 42px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitulo-compra {
+    color: #b7bcc2;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.temporizador {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.temporizador p {
+    color: #b7bcc2;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.tiempo-restante {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bloque-tiempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numero {
+    font-size: 48px;
+    font-weight: 900;
+    color: #FEE715;
+    line-height: 1;
+}
+
+.etiqueta {
+    color: #b7bcc2;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+}
+
+.panel-resumen {
+    background: #2a3a2a;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.panel-resumen img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.panel-resumen h2 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.panel-resumen p {
+    color: #b7bcc2;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.separador {
+    border: none;
+    border-top: 1px solid #3a4a3a;
+    margin: 20px 0;
+}
+
+.fila-detalle {
+    display: flex;
+    justify-content: space-between;
+    color: #b7bcc2;
+    font-size: 15px;
+    margin: 12px 0;
+}
+
+.fila-detalle span:last-child {
+    color: #fff;
+    font-weight: 600;
+}
+
+.fila-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.fila-total span:last-child {
+    color: #FEE715;
+    font-size: 28px;
+}
+
+.panel-formulario {
+    background: #2a3a2a;
+    border-radius: 20px;
+    padding: 35px;
+}
+
+.panel-formulario h3 {
+    font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.campo-formulario {
+    margin-bottom: 22px;
+}
+
+.campo-formulario label {
+    display: block;
+    color: #b7bcc2;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.opcional {
+    color: #666;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.campo-formulario input {
+    width: 100%;
+    background: #1a2a1a;
+    border: 1px solid #3a4a3a;
+    border-radius: 10px;
+    padding: 14px;
+    color: #fff;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.campo-formulario input:focus {
+    outline: none;
+    border-color: #FEE715;
+}
+
+.boton-confirmar {
+    width: 100%;
+    background: #FEE715;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.boton-confirmar:hover {
+    background: #fff700;
+    transform: scale(1.02);
+}
+
+.texto-seguridad {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.pie-pagina {
+    margin-top: 60px;
+    padding: 25px 0;
+    border-top: 1px solid #212121;
+    text-align: center;
+}
+
+.pie-pagina ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #666;
+}
+
+.modal-oculto {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-visible {
+    display: flex !important;
+}
+
+.contenido-modal {
+    background: #161c24;
+    border-radius: 25px;
+    padding: 50px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.icono-exito {
+    width: 80px;
+    height: 80px;
+    background: #FEE715;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0 auto 25px auto;
+    color: #000;
+}
+
+.contenido-modal h2 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.ticket-virtual {
+    background: #1a2028;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.ticket-virtual h3 {
+    color: #FEE715;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.ticket-virtual p {
+    color: #b7bcc2;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.ticket-virtual strong {
+    color: #fff;
+}
+
+.boton-cerrar {
+    background: #FEE715;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-cerrar:hover {
+    background: #fff700;
+    transform: scale(1.05);
+}
+
+
+
+@media (min-width: 768px) {
+    .barra-superior {
+        padding: 20px 40px;
+    }
+
+    .boton-volver,
+    .boton-cambiar {
+        padding: 9px 26px;
+        font-size: 15px;
+    }
+
+    .contenedor-compra {
+        max-width: 900px;
+        margin: 45px auto;
+        padding: 0 25px;
+    }
+
+    .titulo-compra {
+        font-size: 46px;
+    }
+
+    .subtitulo-compra {
+        font-size: 17px;
+    }
+
+    .numero {
+        font-size: 52px;
+    }
+
+    .contenedor-principal {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 35px;
+    }
+
+    .panel-resumen,
+    .panel-formulario {
+        padding: 32px;
+    }
+
+    .panel-resumen img {
+        max-width: 220px;
+    }
+
+    .panel-resumen h2 {
+        font-size: 30px;
+    }
+
+    .fila-detalle {
+        font-size: 16px;
+    }
+
+    .fila-total {
+        font-size: 22px;
+    }
+
+    .fila-total span:last-child {
+        font-size: 30px;
+    }
+
+    .panel-formulario h3 {
+        font-size: 24px;
+    }
+
+    .campo-formulario input {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .boton-confirmar {
+        padding: 17px;
+        font-size: 17px;
+    }
+
+    .contenido-modal {
+        padding: 55px;
+        max-width: 550px;
+    }
+
+    .icono-exito {
+        width: 90px;
+        height: 90px;
+        font-size: 55px;
+    }
+
+    .contenido-modal h2 {
+        font-size: 30px;
+    }
+
+    .ticket-virtual p {
+        font-size: 16px;
+    }
+
+    .boton-cerrar {
+        padding: 15px 45px;
+        font-size: 17px;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .barra-superior {
+        padding: 19px 55px;
+    }
+
+    .boton-volver,
+    .boton-cambiar {
+        padding: 9px 28px;
+        font-size: 16px;
+    }
+
+    .contenedor-compra {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .titulo-compra {
+        font-size: 48px;
+    }
+
+    .subtitulo-compra {
+        font-size: 18px;
+    }
+
+    .temporizador p {
+        font-size: 14px;
+    }
+
+    .numero {
+        font-size: 56px;
+    }
+
+    .etiqueta {
+        font-size: 13px;
+    }
+
+    .contenedor-principal {
+        gap: 40px;
+    }
+
+    .panel-resumen,
+    .panel-formulario {
+        padding: 35px;
+    }
+
+    .panel-resumen img {
+        max-width: 240px;
+    }
+
+    .panel-resumen h2 {
+        font-size: 32px;
+    }
+
+    .panel-resumen p {
+        font-size: 15px;
+    }
+
+    .fila-detalle {
+        font-size: 17px;
+    }
+
+    .fila-total {
+        font-size: 24px;
+    }
+
+    .fila-total span:last-child {
+        font-size: 32px;
+    }
+
+    .panel-formulario h3 {
+        font-size: 26px;
+    }
+
+    .campo-formulario label {
+        font-size: 14px;
+    }
+
+    .boton-confirmar {
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    .pie-pagina {
+        margin-top: 60px;
+        padding: 25px 0;
+    }
+
+    .pie-pagina ul {
+        font-size: 14px;
+    }
+
+    .contenido-modal {
+        padding: 60px;
+        max-width: 600px;
+    }
+
+    .icono-exito {
+        width: 100px;
+        height: 100px;
+        font-size: 60px;
+    }
+
+    .contenido-modal h2 {
+        font-size: 32px;
+    }
+
+    .ticket-virtual {
+        padding: 25px;
+    }
+
+    .ticket-virtual h3 {
+        font-size: 20px;
+    }
+
+    .ticket-virtual p {
+        font-size: 17px;
+    }
+
+    .boton-cerrar {
+        padding: 16px 50px;
+        font-size: 18px;
+    }
+}
+
+
